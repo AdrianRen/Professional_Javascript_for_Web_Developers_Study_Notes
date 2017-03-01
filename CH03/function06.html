@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>function 06</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function addNum() {
+            if (arguments.length == 1) {
+                return arguments[0]+10;
+            } else if (arguments.length == 2){
+                return arguments[0] + arguments[1];
+            }
+        }
+
+        let result = addNum(19,20);
+        alert(result);
+    </script>
+  </body>
+</html>
