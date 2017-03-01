@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Execution Context</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+          let color = "blue";
+          function changeColor() {
+            let anotherColor = "red";
+            function swapColors() {
+              let tempcolor = anotherColor;
+              anotherColor = color;
+              color = tempcolor;
+            }
+            swapColors();
+          }
+          changeColor();
+          alert(`Color is now ${color}`)
+      </script>
+  </body>
+</html>

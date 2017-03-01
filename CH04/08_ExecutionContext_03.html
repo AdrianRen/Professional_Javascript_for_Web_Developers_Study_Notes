@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Execution Context</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+          function buildUrl() {
+              let qs = "?debug=true";
+              with(location){
+                let url = href + qs;
+              }
+
+              return url;
+          }
+
+          let result = buildUrl();
+          alert(result);
+      </script>
+  </body>
+</html>
