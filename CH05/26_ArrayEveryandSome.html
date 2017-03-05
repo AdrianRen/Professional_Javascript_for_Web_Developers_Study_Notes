@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Array type</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+          let numbers = [1,2,3,4,5,4,3,2,1];
+          let everyResult = numbers.every(function (item,index,array) {
+            return (item>2);
+          });
+
+          alert (everyResult);
+      </script>
+  </body>
+</html>
