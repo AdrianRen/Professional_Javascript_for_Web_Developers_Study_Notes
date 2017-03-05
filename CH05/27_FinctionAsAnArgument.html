@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>function</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+        function callSomeFunction(someFunction, someArgument) {
+            return someFunction(someArgument);
+        }
+
+        function add10(num) {
+            return num+10;
+        }
+
+        let result1 = callSomeFunction(add10,10);
+        console.log(result1);
+
+        function getGreeting(name) {
+          return `Hello ${name}`;
+        }
+
+        let result2 = callSomeFunction(getGreeting,"Adrian");
+        console.log(result2);
+      </script>
+  </body>
+</html>
